@@ -1,3 +1,7 @@
+import { combineReducers } from 'redux';
+import todos from './todos';
+import visibilityFilter from './visibilityFilter';
+
 
 // the following 9 lines of code are from the Counter excersize
 // export default (state = 0, action) => {
@@ -11,4 +15,7 @@
 //   }
 // }
 
-// work on reducers later
+export default combineReducers({
+  todos,
+  visibilityFilter
+})
