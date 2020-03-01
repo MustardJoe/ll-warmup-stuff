@@ -8,14 +8,14 @@ import Counter from './components/counter/Counter';
 
 // const render = () => 
 ReactDOM.render(
+    // <Counter
+    // value={store.getState()}
+    // onIncrement={() => store.dispatch({ type: 'INCREMENT' })}
+    // onDecrement={() => store.dispatch({ type: 'DECREMENT' })}
+    // />,
   <Provider store={store}>
     <App />
   </Provider>
-  // <Counter
-  // value={store.getState()}
-  // onIncrement={() => store.dispatch({ type: 'INCREMENT' })}
-  // onDecrement={() => store.dispatch({ type: 'DECREMENT' })}
-  // />,
   ,document.getElementById('root')
   );
 
