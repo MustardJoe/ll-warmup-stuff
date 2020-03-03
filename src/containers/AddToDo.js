@@ -42,7 +42,7 @@ const AddToDo = ({ addToDoMethod }) => {
           return
         }
         addToDoMethod(input.value)
-        input.value = 'hhh'
+        input.value = ''
       }}>
         <input ref={node => input = node} />
         <button type="submit">
