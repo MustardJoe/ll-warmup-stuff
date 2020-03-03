@@ -20,7 +20,7 @@ ToDoList.propTypes = {
     completed: PropTypes.bool.isRequired,
     text: PropTypes.string.isRequired
   }).isRequired).isRequired,
-  toggleTodo: PropTypes.func.isRequired
+  toggleToDo: PropTypes.func.isRequired
 }
 
 export default ToDoList;
