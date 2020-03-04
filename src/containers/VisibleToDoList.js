@@ -20,7 +20,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  toggleToDo: id => dispatch(toggleToDo(id))
+  toggleToDo: id => (dispatch(toggleToDo(id)), console.log('in visibiletodolist'))
 })
 
 export default connect(

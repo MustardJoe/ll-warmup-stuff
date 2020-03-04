@@ -8,7 +8,7 @@ const ToDoList = ({ todos, toggleToDo }) => (
       <ToDo
         key={todo.id}
         {...todo}
-        onClick={() => toggleToDo(todo.id)}
+        onClick={() => (toggleToDo(todo.id), console.log('hi', todo))}
         />  
     )}
   </ul>
