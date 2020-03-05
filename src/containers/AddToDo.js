@@ -12,27 +12,8 @@ const mapStateToProps = (store, props) => {
   return {}
 }
 
-/*
-const mapStateToProps = (store, props) => {
-  return {
-    lastToDo: store.todos[store.todos.length - 1]
-  }
-}
-const mapDispatchToProps = dispatch => {
-  return {
-    loadCompositionPage: data => dispatch(loadCompositionPage(data)),
-    getAudioTranscriptions: data => dispatch(getAudioTranscriptions(data)),
-    getEpisodeSelects: data => dispatch(getEpisodeSelects(data)),
-    createNewEpisode: data => dispatch(createNewEpisode(data)),
-    createNewSelect: data => dispatch(createNewSelect(data)),
-    createNewTranscriptionVersion: data => dispatch(createNewTranscriptionVersion(data))
-  }
-}*/
-
-
 const AddToDo = ({ addToDoMethod }) => {
   let input;
-
 
   return (
     <div>
@@ -53,4 +34,7 @@ const AddToDo = ({ addToDoMethod }) => {
   )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(AddToDo)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(AddToDo);

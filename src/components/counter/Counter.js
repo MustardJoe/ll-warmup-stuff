@@ -6,7 +6,7 @@ class Counter extends Component{
     const { value, onIncrement, onDecrement, onReset } = this.props;
     return (
       <p>
-        <span>Clicked: {value} times</span>
+        <span>Clicked: {value} times </span>
         <button onClick={onIncrement}>+</button>
         {' '}
         <button onClick={onDecrement}>-</button>
