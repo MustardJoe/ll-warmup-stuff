@@ -35,7 +35,7 @@ export class Node extends Component {
   }
 
   render() {
-    const { counter, parentId, childId } = this.props;
+    const { counter, parentId, childIds } = this.props;
     return (
       <div>
         Counter: {counter}
@@ -44,7 +44,7 @@ export class Node extends Component {
           +
         </button>
         {' '}
-        {typeof parrentId !== 'undefined' &&
+        {typeof parentId !== 'undefined' &&
           <a href="#" onClick={this.handleRemoveClick}
             style={{ color: 'lightgray', textDecoration: 'none' }}>
               x
@@ -65,7 +65,7 @@ export class Node extends Component {
 }
 
 function mapStateToProps(state, ownProps) {
-  return state[ownProps.id]
+  return state[ownProps.id];
 }
 
 const ConnectedNode = connect(mapStateToProps, actions)(Node);
