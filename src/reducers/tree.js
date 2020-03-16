@@ -51,7 +51,7 @@ export const deleteMany = (state, ids) => {
   return state;
 }
 
-export default (state = {}, action) => {
+export const treeReducers = (state = {}, action) => {
   const { nodeId } = action;
   if(typeof nodeId === 'undefined') {
     return state;
