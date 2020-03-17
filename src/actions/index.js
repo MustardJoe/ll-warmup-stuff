@@ -48,7 +48,7 @@ export const treeIncrement = (nodeId) => ({
 });
 
 let nextId = 0;
-export const treeCreatNode = () => ({
+export const treeCreateNode = () => ({
   type: TREE_CREATE_NODE,
   nodeId: `new_${nextId++}`
 });
@@ -58,7 +58,7 @@ export const treeDeleteNode = (nodeId) => ({
   nodeId
 });
 
-export const treeAddNode = (nodeId, childId) => ({
+export const treeAddChild = (nodeId, childId) => ({
   type: TREE_ADD_CHILD,
   nodeId,
   childId
